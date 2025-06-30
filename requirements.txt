@@ -1,0 +1,9 @@
+face_recognition
+opencv-python
+picamera2
+RPi.GPIO
+gpiozero
+numpy
+imutils
+blynk-library
+smbus
