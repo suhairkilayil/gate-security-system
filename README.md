@@ -19,12 +19,12 @@ This system provides **automated, secure, and remote-controlled gate access** id
 
 ## 🎯 Key Features
 
-- 👤 **Face Recognition** using PiCamera & pre-trained face embeddings
-- 🔐 **PIN-based Access** via 4x4 matrix keypad
-- 📲 **Remote Monitoring** through Blynk with real-time video
-- 🔔 **Visitor Bell** for unknown individuals with alert notifications
-- 🚨 **Buzzer Feedback** for gate open/close status
-- 🔄 **Servo-Controlled Gate** with precise actuation
+- 👤 Face Recognition using PiCamera & pre-trained encodings
+- 🔐 PIN-based Access via 4x4 Keypad
+- 📲 Remote Monitoring through Blynk with real-time video
+- 🔔 Visitor Bell for unknown individuals with notification
+- 🚨 Buzzer Feedback for gate open/close status
+- 🔄 Servo-Controlled Gate Operation
 
 ---
 
@@ -32,14 +32,14 @@ This system provides **automated, secure, and remote-controlled gate access** id
 
 | Component               | Description                      |
 |------------------------|----------------------------------|
-| Raspberry Pi 4B        | Main processing unit             |
-| Pi Camera Module       | Captures images for recognition  |
+| Raspberry Pi 4B        | Main controller                  |
+| Pi Camera Module       | Captures images for face auth    |
 | Servo Motor            | Controls gate movement           |
 | 4x4 Matrix Keypad      | PIN input                        |
-| LCD Display (I2C)      | Feedback for user interactions   |
-| Buzzer & Push Buttons  | Alerts and trigger mechanisms    |
-| 7805 Voltage Regulator | Stable 5V power supply           |
-| Breadboard + Wires     | Prototyping & connections        |
+| LCD Display (I2C)      | Real-time user feedback          |
+| Buzzer & Push Buttons  | Alerts and input triggers        |
+| 7805 Voltage Regulator | Powers components reliably       |
+| Breadboard + Wires     | For prototyping and wiring       |
 
 ---
 
@@ -54,9 +54,6 @@ gate-security-system/
 ├── docs/
 │   ├── Mini_Project_Report.pdf
 │   └── images/
-│       ├── block_diagram.png
-│       ├── face_recognition_output.jpg
-│       └── hardware_setup.jpg
 ├── demo/
 │   └── gate_security_demo.mp4
 ├── hardware/
@@ -69,3 +66,51 @@ gate-security-system/
 │   ├── calling_bell.py
 │   ├── servo_buzzer.py
 │   └── encodings.pickle
+```
+
+---
+
+## 📄 Project Report
+
+📥 [Click here to download the full Mini Project Report (PDF)](docs/Mini_Project_Report.pdf)
+
+This report was submitted to **APJ Abdul Kalam Technological University** in partial fulfillment of the B.Tech Degree.
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/<your-username>/gate-security-system.git
+```
+
+2. Install dependencies:
+```bash
+cd gate-security-system
+pip install -r requirements.txt
+```
+
+3. Run the main controller script:
+```bash
+python3 code/main.py
+```
+
+---
+
+## 👨‍🎓 Authors
+
+- Sana C P (NSS22EC099)
+- Sariga R (NSS2EC104)
+- Sharan Krishnan M (NSS22EC109)
+- Suhair K (NSS22EC118)
+
+B.Tech (ECE), NSS College of Engineering, Palakkad
+
+**Project Guide:** Asst. Prof. Prasad R Menon
+
+---
+
+## 🪪 License
+
+This project is licensed under the [MIT License](LICENSE).
